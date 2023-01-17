@@ -23,66 +23,80 @@
     <!-- Loader_end -->
     
     <nav>
-    <div class="wrapper">
-        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-      <div class="logo">
-        <img src="asset/logo-no-background.png">
-      </div>
-      <input type="radio" name="slider" id="menu-btn">
-      <input type="radio" name="slider" id="close-btn">
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="#">Cà Phê</a></li>
-        <li><a href="#">Trà</a></li>
-        <li>
-          <a href="#" class="desktop-item">Menu</a>
-          <input type="checkbox" id="showDrop">
-          <label for="showDrop" class="mobile-item">Menu</label>
-          <ul class="drop-menu">
-            <li><a href="#">Drop menu 1</a></li>
-            <li><a href="#">Drop menu 2</a></li>
-            <li><a href="#">Drop menu 3</a></li>
-            <li><a href="#">Drop menu 4</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Chuyện Nhà</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Chuyện nhà</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <header>CoffeeHolic</header>
-                  <ul class="mega-links">
-                  <li><a href="#">#PhaCaPhe</a></li>
-                  <li><a href="#">#ChuyenCaPhe</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>TeaHolic</header>
-                  <ul class="mega-links">
-                  <li><a href="#">#PhaTra</a></li>
-                  <li><a href="#">#CauChuyenVeTra</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Blog</header>
-                  <ul class="mega-links">
-                  <li><a href="#">#Review</a></li>
-                  <li><a href="#">#Mood</a></li>
-                  <li><a href="#">#HumanOfTCH</a></li>
-                </ul>
-              </div>
+      <div class="wrapper">
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="logo">
+          <a href="index.html">
+            <img src="asset/logo-no-background.png">
+          </a>
+          
+        </div>
+      
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li>
+            <a href="menu.html" class="desktop-item">Menu</a>      
+          </li>
+          <li>
+            <a href="chuyenha.html" class="desktop-item">Chuyện Nhà</a>
+          </li>
+          <li><a href="camhung.html">Cảm Hứng CloudFee</a></li>
+          <li><a href="cuahang.html">Cửa Hàng</a></li>
+          <li><a href="tuyendung.html">Tuyển dụng</a></li>
+          <li><a><button>Đăng Nhập</button></a></li>
+          <li><a><button style="background-color: aliceblue; color: rgba(165, 85, 42, 0.849); padding: 0%;" id="cart"><i class="fa fa-shopping-cart" style="font-size:18px"></i></button></a></li>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+                      <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" width="100" height="100">
+                            <span class="cart-item-title">Cà Phê sữa đá</span>
+                        </div>
+                        <span class="cart-price cart-column">25000đ</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <button class="btn-danger" type="button">Xóa</button>
+                        </div>
+                    </div>
+                    <div class="cart-row">
+                      <div class="cart-item cart-column">
+                          <img class="cart-item-image" src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" width="100" height="100">
+                          <span class="cart-item-title">Cà Phê sữa đá</span>
+                      </div>
+                      <span class="cart-price cart-column">25000đ</span>
+                      <div class="cart-quantity cart-column">
+                          <input class="cart-quantity-input" type="number" value="1">
+                          <button class="btn-danger" type="button">Xóa</button>
+                      </div>
+                  </div>
+                    
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
             </div>
-          </div>
-        </li>
-        <li><a href="#">Cảm Hứng CloudFee</a></li>
-        <li><a href="#">Cửa Hàng</a></li>
-        <li><a href="#">Tuyển dụng</a></li>
-        <li><a><button>Đăng Nhập</button></a></li>
-      </ul>
-    </div>
-  </nav>
+        </div>
+        </ul>
+      </div>
+    </nav>
 <!-- slider -->
     <section class="sliders">
         <div class="aspect-ratio-169">
@@ -106,31 +120,90 @@
                       <img src="https://file.hstatic.net/1000075078/file/banner_app_59792ee4e6074b33aca7f140433e9292.jpg" alt="">
                   </div>
 
-                  <div class="cartegory-right-content-item">
-                      <img src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" alt="">
-                      <h1>V</h1>
-                      <p>70.000<sup>đ</sup></p>
+                  <div class="cartegory-right-content-item" >
+                    <li class="main-product">
+                      <a href="sanpham.html">
+                        <div class="img-product">
+                        
+                          <img class="img-prd"
+                              src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg"
+                              alt="">
+                      </div>
+                      <div class="content-product">
+                          <h1 class="title-product">Cà Phê Sữa đá</h1>
+                          <div class="content-product-deltals">
+                              <div class="price">
+                                  <p class="money">25000đ</p>
+                              </div>
+                          </div>
+                      </div>
+                      </a>
+                      
+                  </li>
                   </div>
-                  <div class="cartegory-right-content-item">
-                    <img src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" alt="">
-                    <h1>V</h1>
-                    <p>70.000<sup>đ</sup></p>
-                </div>
-                <div class="cartegory-right-content-item">
-                  <img src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" alt="">
-                  <h1>V</h1>
-                  <p>70.000<sup>đ</sup></p>
-              </div>
-              <div class="cartegory-right-content-item">
-                <img src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" alt="">
-                <h1>V</h1>
-                <p>70.000<sup>đ</sup></p>
-            </div>
-            <div class="cartegory-right-content-item">
-              <img src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg" alt="">
-              <h1>V</h1>
-              <p>70.000<sup>đ</sup></p>
-          </div>
+                  <div class="cartegory-right-content-item" >
+                    <li class="main-product">
+                      <a href="sanpham.html">
+                        <div class="img-product">
+                        
+                          <img class="img-prd"
+                              src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg"
+                              alt="">
+                      </div>
+                      <div class="content-product">
+                          <h1 class="title-product">Cà Phê Sữa đá</h1>
+                          <div class="content-product-deltals">
+                              <div class="price">
+                                  <p class="money">25000đ</p>
+                              </div>
+                          </div>
+                      </div>
+                      </a>
+                      
+                  </li>
+                  </div>
+                  <div class="cartegory-right-content-item" >
+                    <li class="main-product">
+                      <a href="sanpham.html">
+                        <div class="img-product">
+                        
+                          <img class="img-prd"
+                              src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg"
+                              alt="">
+                      </div>
+                      <div class="content-product">
+                          <h1 class="title-product">Cà Phê Sữa đá</h1>
+                          <div class="content-product-deltals">
+                              <div class="price">
+                                  <p class="money">25000đ</p>
+                              </div>
+                          </div>
+                      </div>
+                      </a>
+                      
+                  </li>
+                  </div>
+                  <div class="cartegory-right-content-item" >
+                    <li class="main-product">
+                      <a href="sanpham.html">
+                        <div class="img-product">
+                        
+                          <img class="img-prd"
+                              src="https://product.hstatic.net/1000075078/product/1665655345_tch-sua-da_776abbb1075544df8168f709fad1edcd.jpg"
+                              alt="">
+                      </div>
+                      <div class="content-product">
+                          <h1 class="title-product">Cà Phê Sữa đá</h1>
+                          <div class="content-product-deltals">
+                              <div class="price">
+                                  <p class="money">25000đ</p>
+                              </div>
+                          </div>
+                      </div>
+                      </a>
+                      
+                  </li>
+                  </div>
          
                
               </div>
@@ -177,36 +250,7 @@
       </div>
     </div>
   </div>
-  <div class ="cartegory-right">
-    <div class="cartegory-right-top-item ">
-        <div class="cartegory-right-content-tittle">
-          <p>#ChuyenCaPhe</p>
-    </div>
-    <div class="cartegory-right-content row">
-      <div class="cartegory-right-content-item menu-story">
-          <img src="https://file.hstatic.net/1000075078/file/banner_app_59792ee4e6074b33aca7f140433e9292.jpg" alt=""> 
-            <h1>CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ</h1>
-            <p>Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
-          
-      </div>
-      <div class="cartegory-right-content-item menu-story">
-        <img src="https://file.hstatic.net/1000075078/file/banner_app_59792ee4e6074b33aca7f140433e9292.jpg" alt=""> 
-          <h1>CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ</h1>
-          <p>Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
-        
-    </div>
-    <div class="cartegory-right-content-item menu-story">
-      <img src="https://file.hstatic.net/1000075078/file/banner_app_59792ee4e6074b33aca7f140433e9292.jpg" alt=""> 
-        <h1>CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ</h1>
-        <p>Cà phê sữa Espresso là một lon cà phê sữa giải khát với hương vị cà phê đậm đà từ 100% cà phê Robusta cùng vị sữa béo nhẹ cho bạn một trải nghiệm...</p>
-      
-  </div>       
-</div>
-<div class="cartegory-right-top-item ">
 
-</div>
-</div>
-</div>
   
 
 </section>
@@ -238,11 +282,6 @@
         </div>
     </div>
     </section>
-
-    
-    
-
-
 
 
 </body>
